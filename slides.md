@@ -81,6 +81,10 @@ layout: two-cols
 
 ---
 
+---
+layout: two-cols
+---
+
 # Factor 4: 백엔드 서비스(Backing Services)
 [12factor.net/backing-services](https://12factor.net/backing-services)
 
@@ -88,6 +92,14 @@ layout: two-cols
 - **사례:**
   - 로컬 DB → 클라우드 DB로 변경 시 환경 변수만 수정
 
+::right::
+
+![attached-resources.png](/images/attached-resources.png)
+
+---
+
+---
+layout: two-cols
 ---
 
 # Factor 5: 빌드, 릴리즈, 실행(Build, Release, Run)
@@ -96,6 +108,10 @@ layout: two-cols
 - 빌드, 릴리즈, 실행 단계 분리
 - **사례:**
   - CI/CD 파이프라인에서 각 단계가 명확히 분리됨
+
+::right::
+
+![release.png](/images/release.png)
 
 ---
 
@@ -117,12 +133,20 @@ layout: two-cols
 
 ---
 
+---
+layout: two-cols
+---
+
 # Factor 8: 동시성(Concurrency)
 [12factor.net/concurrency](https://12factor.net/concurrency)
 
 - 수평 확장(Scale out)으로 동시성 확보
 - **사례:**
   - Docker 컨테이너 여러 개로 앱 인스턴스 확장
+
+::right::
+
+![process-types.png](/images/process-types.png)
 
 ---
 
