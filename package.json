@@ -1,17 +1,21 @@
 {
   "name": "learn-12-factors-app",
-  "type": "module",
-  "private": true,
+  "version": "0.0.0",
+  "description": "12-Factor App presentation slides",
+  "homepage": "https://songminseok.github.io/learn-12-factors-app",
   "scripts": {
-    "build": "slidev build",
     "dev": "slidev --open",
+    "build": "slidev build",
+    "preview": "slidev build && slidev preview",
     "export": "slidev export"
   },
   "dependencies": {
-    "@slidev/cli": "^52.0.0",
-    "@slidev/theme-default": "latest",
-    "@slidev/theme-seriph": "latest",
-    "vue": "^3.5.17"
+    "@slidev/cli": "^0.52.0",
+    "@slidev/theme-seriph": "^0.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "playwright-chromium": "^1.40.0"
   },
   "slidev": {
     "theme": "seriph",
