@@ -80,8 +80,6 @@ layout: two-cols
   - DB 접속 정보, API 키를 환경 변수로 관리
 
 ---
-
----
 layout: two-cols
 ---
 
@@ -96,7 +94,6 @@ layout: two-cols
 
 ![attached-resources.png](/images/attached-resources.png)
 
----
 
 ---
 layout: two-cols
@@ -130,8 +127,6 @@ layout: two-cols
 - 자체적으로 포트를 바인딩해 서비스 제공
 - **사례:**
   - Spring Boot, Express.js 앱이 내장 서버로 8080 포트에서 동작
-
----
 
 ---
 layout: two-cols
@@ -185,11 +180,7 @@ layout: two-cols
   - DB 마이그레이션을 별도 커맨드로 실행
 
 ---
-
-# 실제 적용 사례 (선택)
-- 우리 조직/팀에서 적용한 12-Factor 사례
-- (예시: 환경 변수 관리, 무상태 세션 처리 등)
-
+layout: center
 ---
 
 # Q&A
