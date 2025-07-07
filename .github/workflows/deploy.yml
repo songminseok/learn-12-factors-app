@@ -29,14 +29,17 @@ jobs:
           node-version: '20'
           cache: 'npm'
       
+      - name: Setup @antfu/ni
+        run: npm i -g @antfu/ni
+
+      - name: Install dependencies
+        run: nci
+
+      - name: Build
+        run: nr build --base /${{github.event.repository.name}}/      
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
-      
-      - name: Install dependencies
-        run: npm ci
-      
-      - name: Build with Slidev
-        run: npm run build --base /${{github.event.repository.name}}/
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
